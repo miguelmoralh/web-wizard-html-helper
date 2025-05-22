@@ -11,8 +11,8 @@ import {
   X, 
   RefreshCw, 
   Download, 
-  Translate,
-  SwapHorizontal,
+  Languages,
+  ArrowRight,
   Sparkles
 } from "lucide-react";
 
@@ -141,7 +141,7 @@ const Index = () => {
           {/* Input Corpus */}
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
             <div className="flex items-center mb-4">
-              <Translate className="text-indigo-500 mr-2" />
+              <Languages className="text-indigo-500 mr-2" />
               <h2 className="text-xl font-semibold">Input Corpus</h2>
             </div>
             
@@ -215,7 +215,7 @@ const Index = () => {
                 className="absolute -top-4 -translate-x-1/2 left-1/2 bg-white p-2 rounded-full shadow-md border border-gray-200 hover:shadow-lg cursor-pointer transition-all duration-200 z-10"
                 onClick={swapLanguages}
               >
-                <SwapHorizontal className="text-gray-500 hover:text-indigo-500 transform transition-transform duration-300 hover:rotate-180" />
+                <ArrowRight className="text-gray-500 hover:text-indigo-500 transform transition-transform duration-300 hover:rotate-180" />
               </div>
               
               <div 
@@ -239,7 +239,7 @@ const Index = () => {
                 {isTranslating ? (
                   <RefreshCw className="mr-2 h-4 w-4 animate-spin" />
                 ) : (
-                  <Translate className="mr-2 h-4 w-4" />
+                  <Languages className="mr-2 h-4 w-4" />
                 )}
                 Translate
               </Button>
